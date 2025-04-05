@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duration Statistics Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+    <div id="header"></div>
+    <div class="container">
+        <h1>Duration Statistics</h1>
+        <p class="subtitle">Enter durations to calculate statistics</p>
+        
+        <div class="input-section">
+            <div class="input-group">
+                <label for="hours">Hours</label>
+                <input type="number" id="hours" min="0" placeholder="0">
+            </div>
+            <div class="input-group">
+                <label for="minutes">Minutes</label>
+                <input type="number" id="minutes" min="0" max="59" placeholder="0">
+            </div>
+            <div class="input-group">
+                <label for="seconds">Seconds</label>
+                <input type="number" id="seconds" min="0" max="59" placeholder="0">
+            </div>
+            <button id="add-btn">Add Duration</button>
+        </div>
+
+        <div class="durations-list">
+            <h2>Entered Durations</h2>
+            <div id="durations-container"></div>
+            <p id="no-durations">No durations added yet</p>
+        </div>
+
+        <div class="results">
+            <div class="result-card">
+                <h3>Mean Average</h3>
+                <p id="mean-result">--</p>
+            </div>
+            <div class="result-card">
+                <h3>Median Average</h3>
+                <p id="median-result">--</p>
+            </div>
+            <div class="result-card">
+                <h3>Mode Average</h3>
+                <p id="mode-result">--</p>
+            </div>
+            <div class="result-card">
+                <h3>Average Deviation</h3>
+                <p id="avg-deviation-result">--</p>
+            </div>
+            <div class="result-card">
+                <h3>Longest Deviation</h3>
+                <p id="longest-deviation-result">--</p>
+            </div>
+            <div class="result-card">
+                <h3>Shortest Deviation</h3>
+                <p id="shortest-deviation-result">--</p>
+            </div>
+            <div class="result-card">
+                <h3>Total Duration</h3>
+                <p id="total-result">--</p>
+            </div>
+            <div class="result-card">
+                <h3>Duration Count</h3>
+                <p id="count-result">0</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/header.js"></script>
+</body>
+</html>
